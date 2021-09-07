@@ -143,6 +143,24 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]: compute the mid-range of all iterated values.
+-   [`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]: create an iterator which iteratively computes a moving arithmetic mean.
+-   [`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]: create an iterator which iteratively computes a moving maximum value.
+-   [`@stdlib/stats/iter/mmin`][@stdlib/stats/iter/mmin]: create an iterator which iteratively computes a moving minimum value.
+-   [`@stdlib/stats/iter/mrange`][@stdlib/stats/iter/mrange]: create an iterator which iteratively computes a moving range.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -205,6 +223,20 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mid-range]: https://en.wikipedia.org/wiki/Mid-range
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
+<!-- <related-links> -->
+
+[@stdlib/stats/iter/midrange]: https://github.com/stdlib-js/stats-iter-midrange
+
+[@stdlib/stats/iter/mmean]: https://github.com/stdlib-js/stats-iter-mmean
+
+[@stdlib/stats/iter/mmax]: https://github.com/stdlib-js/stats-iter-mmax
+
+[@stdlib/stats/iter/mmin]: https://github.com/stdlib-js/stats-iter-mmin
+
+[@stdlib/stats/iter/mrange]: https://github.com/stdlib-js/stats-iter-mrange
+
+<!-- </related-links> -->
 
 </section>
 
