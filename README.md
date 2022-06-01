@@ -130,11 +130,11 @@ var it = itermmidrange( rand, 3 );
 var v;
 while ( true ) {
     v = it.next();
-    if ( typeof v.value === 'number' ) {
-        console.log( 'mid-range: %d', v.value );
-    }
     if ( v.done ) {
         break;
+    }
+    if ( typeof v.value === 'number' ) {
+        console.log( 'mid-range: %d', v.value );
     }
 }
 ```
