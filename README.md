@@ -34,14 +34,30 @@ The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of ma
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-mmidrange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itermmidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmidrange@deno/mod.js';
+var itermmidrange = require( '@stdlib/stats-iter-mmidrange' );
 ```
 
 #### itermmidrange( iterator, W )
@@ -49,7 +65,7 @@ import itermmidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmid
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a moving [mid-range][mid-range]. The `W` parameter defines the number of iterated values over which to compute the moving [mid-range][mid-range].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itermmidrange( arr, 3 );
@@ -98,8 +114,8 @@ v = it.next().value; // [3.0, -7.0, -5.0]
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermmidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mmidrange@deno/mod.js';
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermmidrange = require( '@stdlib/stats-iter-mmidrange' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -143,11 +159,11 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]</span><span class="delimiter">: </span><span class="description">compute the mid-range of all iterated values.</span>
--   <span class="package-name">[`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean.</span>
--   <span class="package-name">[`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving maximum value.</span>
--   <span class="package-name">[`@stdlib/stats/iter/mmin`][@stdlib/stats/iter/mmin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving minimum value.</span>
--   <span class="package-name">[`@stdlib/stats/iter/mrange`][@stdlib/stats/iter/mrange]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving range.</span>
+-   <span class="package-name">[`@stdlib/stats-iter/midrange`][@stdlib/stats/iter/midrange]</span><span class="delimiter">: </span><span class="description">compute the mid-range of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats-iter/mmean`][@stdlib/stats/iter/mmean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean.</span>
+-   <span class="package-name">[`@stdlib/stats-iter/mmax`][@stdlib/stats/iter/mmax]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving maximum value.</span>
+-   <span class="package-name">[`@stdlib/stats-iter/mmin`][@stdlib/stats/iter/mmin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving minimum value.</span>
+-   <span class="package-name">[`@stdlib/stats-iter/mrange`][@stdlib/stats/iter/mrange]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving range.</span>
 
 </section>
 
@@ -162,7 +178,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -230,15 +246,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/midrange]: https://github.com/stdlib-js/stats-iter-midrange/tree/deno
+[@stdlib/stats/iter/midrange]: https://github.com/stdlib-js/stats-iter-midrange
 
-[@stdlib/stats/iter/mmean]: https://github.com/stdlib-js/stats-iter-mmean/tree/deno
+[@stdlib/stats/iter/mmean]: https://github.com/stdlib-js/stats-iter-mmean
 
-[@stdlib/stats/iter/mmax]: https://github.com/stdlib-js/stats-iter-mmax/tree/deno
+[@stdlib/stats/iter/mmax]: https://github.com/stdlib-js/stats-iter-mmax
 
-[@stdlib/stats/iter/mmin]: https://github.com/stdlib-js/stats-iter-mmin/tree/deno
+[@stdlib/stats/iter/mmin]: https://github.com/stdlib-js/stats-iter-mmin
 
-[@stdlib/stats/iter/mrange]: https://github.com/stdlib-js/stats-iter-mrange/tree/deno
+[@stdlib/stats/iter/mrange]: https://github.com/stdlib-js/stats-iter-mrange
 
 <!-- </related-links> -->
 
